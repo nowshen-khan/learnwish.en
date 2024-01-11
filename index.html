@@ -193,20 +193,47 @@
                         </p>
 
                         <div class="input-wrapper">
-                            <form action="" method="get">
-                                <input type="search" placeholder="Search for a topic..." />
-                                <button type="submit"><i class="fa fa-search"></i></button>
+                            <form class="gform" method="POST" data-email="example@email.net"
+                                action="https://script.google.com/macros/s/AKfycbzg2z8xu9UWx2gChB23_9X-iCw-g-wp8g-4wN5z1ELNtXOdz8rA4M2fOCAU7leTmmIG/exec">
+                                <!-- the form action url -->
+                                <label for="email"></label>
+                                <input id="email" type="email" name="email" placeholder="Type your email address"
+                                    required class="input-field" autocomplete="off" />
 
+                                <button class="btn bth-primary">
+                                    <span class="span">Subscribe</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </button>
                             </form>
 
                         </div>
 
                     </div>
+
+                    <div class="hero-banner">
+                        <img src="/assets/images/illustration_learnwish.jpg" width="327" height="490" class="w-100"
+                            alt="A person sitting in front of a laptop with a book and a cup of coffee."
+                            loading="lazy" />
+
+                        <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape"
+                            class="shape shape-1">
+
+                        <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape"
+                            class="shape shape-2">
+                    </div>
+
+                    <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
                 </div>
             </section>
         </article>
     </main>
 
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
+    <script data-cfasync="false" src="assets/js/google-apps-script.js"></script>
+    <!-- END -->
 </body>
 
 </html>
