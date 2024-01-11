@@ -224,9 +224,54 @@
                     </div>
 
                     <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+                    <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
 
                 </div>
             </section>
+
+            <!-- 
+    #Topics
+ -->
+            <section id="topics" class="section topics" aria-labelledby="topic-label">
+                <div class="container">
+
+                    <div class="card topic-card">
+
+                        <div class="card-content">
+
+                            <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                                <span id="topic-label">Important topics</span>
+                            </h2>
+                            <p class="card-text">
+                                Don't miss out on the latest news, blog about Educational tips and tricks...
+                            </p>
+
+                            <div class="btn-group">
+                                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                                    <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                                </button>
+                                <button class="btn-icon" aria-label="next" data-slider-next>
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="slider" data-slider>
+                            <ul class="slider-list" data-slider-container>
+                                @foreach ($posts as $post)
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card"></a> 
+                                    <!-- here -->
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </article>
     </main>
 
