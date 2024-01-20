@@ -163,7 +163,7 @@
 
             </nav>
 
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <a href="#name" class="btn btn-primary">Subscribe</a>
 
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -197,22 +197,30 @@
                             voyage.
                         </p>
 
-                        <div class="input-wrapper">
-                            <form class="gform" method="POST" data-email="example@email.net"
-                                action="https://script.google.com/macros/s/AKfycbzg2z8xu9UWx2gChB23_9X-iCw-g-wp8g-4wN5z1ELNtXOdz8rA4M2fOCAU7leTmmIG/exec">
-                                <!-- the form action url -->
+
+                        <form class="gform" method="POST" data-email="example@email.net"
+                            action="https://script.google.com/macros/s/AKfycbzg2z8xu9UWx2gChB23_9X-iCw-g-wp8g-4wN5z1ELNtXOdz8rA4M2fOCAU7leTmmIG/exec">
+                            <!-- the form action url -->
+                            <div class="input-wrapper">
+
                                 <label for="email"></label>
-                                <input id="email" type="email" name="email" placeholder="Type your email address"
-                                    required class="input-field" autocomplete="off" />
+                                <input id="email" type="email" name="email_address"
+                                    placeholder="Type your email address" required class="input-field"
+                                    autocomplete="off" />
 
                                 <button class="btn btn-primary">
                                     <span class="span">Subscribe</span>
 
                                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                                 </button>
-                            </form>
 
-                        </div>
+                                <div class="thankyou_message" style="display:none;">
+                                    <h2><em>Thanks</em> for joining with us!</h2>
+                                </div>
+
+
+                            </div>
+                        </form>
 
                     </div>
 
@@ -1489,34 +1497,49 @@
                             news.
                         </p>
 
-                        <div class="input-wrapper">
-                            <input type="text" name="name" placeholder="Your name" required class="input-field"
-                                autocomplete="off">
+                        <form class="gform" method="POST" data-email="example@email.net"
+                            action="https://script.google.com/macros/s/AKfycbzg2z8xu9UWx2gChB23_9X-iCw-g-wp8g-4wN5z1ELNtXOdz8rA4M2fOCAU7leTmmIG/exec">
+                            <!-- the form action url -->
 
-                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                        </div>
+                            <div class="input-wrapper">
+                                <label for="name"></label>
+                                <input id="name" type="text" name="name" placeholder="Your name" required
+                                    class="input-field" autocomplete="off">
 
-                        <div class="input-wrapper">
-                            <input type="email" name="email_address" placeholder="Emaill address" required
-                                class="input-field" autocomplete="off">
+                                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                            </div>
 
-                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                        </div>
+                            <div class="input-wrapper">
+                                <label for="email"></label>
+                                <input id="email" type="email" name="email_address" placeholder="Emaill address"
+                                    required class="input-field" autocomplete="off">
 
-                        <a href="#" class="btn btn-primary">
-                            <span class="span">Subscribe</span>
+                                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                            </div>
 
-                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                        </a>
+                            <button>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="span">Subscribe</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </button>
+                            <div class="thankyou_message" style="display:none;">
+                                <h2><em>Thanks</em> for joining with us!</h2>
+                            </div>
+                        </form>
 
                     </div>
-
                 </div>
+
 
                 <div class="footer-bottom">
 
                     <p class="copyright">
-                        &copy; Developed by <a href="#" class="copyright-link">codewithsadee.</a>
+                        &copy; 2024 All Rights Reserved by <a href="https://nowshen-khan.github.io/learnwish.en/"
+                            class="copyright-link">LearnWishBD.</a> <br>
+                        Developed by <a href="https://github.com/nowshen-khan/" target="_blank"
+                            rel="noopener noreferrer" class="copyright-link">nowshen-khan</a>
                     </p>
 
                     <ul class="social-list">
